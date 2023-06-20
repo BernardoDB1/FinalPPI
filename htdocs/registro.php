@@ -21,7 +21,7 @@
             <div>
                 <button><a href="index.php">Logar</a>
                 </button>
-                <input style="background-color: rgb(255, 123, 47); color: white" disabled type="submit" value="Cadastrar" id="submit">
+                <input type="submit" value="Cadastrar" id="submit">
             </div>
         </fieldset>
     </form>
