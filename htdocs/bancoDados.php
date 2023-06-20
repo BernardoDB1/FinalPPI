@@ -16,7 +16,6 @@
         } catch(PDOException $e){
             echo $e->getMessage();
         }
-        return $con->lastInsertId();
     }
 
     function altUser($id, $nome, $email, $senha){
