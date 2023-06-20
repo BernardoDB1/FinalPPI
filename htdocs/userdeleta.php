@@ -5,7 +5,7 @@
 	if(verificarUsuario() == 'false'){
 		header('Location: index.php');
 	} else {
-		deletarUsuario($_GET['id']);
+		delUser($_GET['id']);
 		$usuario = $_SESSION['usuarioAtual'];
 		if($usuario->getId() == $_GET['id']){
 			header('Location: logoff.php');

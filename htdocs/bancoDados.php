@@ -1,6 +1,6 @@
 <?php               
     function conectabanco(){
-        $con = new PDO("mysql:host=localhost;dbname=banco", "root", "aluno");
+        $con = new PDO("mysql:host=localhost;dbname=banco", "Senha_Maluk4", "AmogusSUS");
         return $con;
     }
 
@@ -98,6 +98,16 @@
         }
         catch(PDOException $e){
             echo $e->getMessage();
+        }
+        return $result;
+    }
+
+    function verificarUsuario(){
+        session_start();
+        if($_SESSION['usuarioAtual']==null){
+            $result = 'false';
+        } else {
+            $result = 'true';
         }
         return $result;
     }

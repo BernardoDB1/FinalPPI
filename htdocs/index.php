@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="container">
-    <?php
-        session_start();
-        if($_SESSION!=null){
-            if($_SESSION['usuarioAtual']!=null){
-                header('Location: home.php?p=');
-            }
-        }
-    ?>
     <form action="verificarlogin.php" method="post">
         <fieldset class="container">
             <legend>Login</legend>
