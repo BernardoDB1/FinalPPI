@@ -75,7 +75,7 @@
 
     function verificarCadastro($email){
         try{
-                $con=conectaBD();
+                $con=conectabanco();
                 $sql="SELECT * FROM usuario WHERE email LIKE ?;";
                 $stm=$con->prepare($sql);
                 $stm->bindParam(1, $email);
@@ -86,7 +86,7 @@
             }
             return $result;
         }
-        
+
     function login($email, $senha){
         try{
             $con=conectabanco();
