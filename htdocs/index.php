@@ -16,7 +16,7 @@
             }
         }
     ?>
-    <form action="verifica_login.php" method="post">
+    <form action="verificarlogin.php" method="post">
         <fieldset class="container">
             <legend>Login</legend>
             <label>Email:</label>

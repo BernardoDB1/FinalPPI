@@ -10,7 +10,7 @@
     <?php
     include_once "bancoDados.php";
     $id = $_GET['id'];
-    $usuario = getUsuario($id);
+    $usuario = getUser($id);
     ?>
     <form method="post" action="atualizarUsuario.php">
         <fieldset class="container">
