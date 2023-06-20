@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    background-color: white;
+    color: rgb(168, 168, 168);
+    border-style: double; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+}
