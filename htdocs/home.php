@@ -10,6 +10,7 @@
     <?php
     include_once "bancoDados.php";
     include_once "usuario.php";
+    $getUser = listUser();
     session_start();
     $usuarioAtual = $_SESSION['usuarioAtual'];
     ?>
@@ -25,12 +26,12 @@
                 <th>Email</th>
                 <th>Editar</th>
             </tr>
-            <?php foreach($getUsuarios as $usuario){ ?>
+            <?php foreach($getUser as $usuario){ ?>
             <tr>
                 <td><?php echo $usuario['id']; ?></td>
                 <td><?php echo $usuario['nome']; ?></td>
                 <td><?php echo $usuario['email']; ?></td>
-                <td><button><a href="usuarioInfo.php?id=<?php echo $usuario['id'] ?>">Editar</a></button></td>
+                <td><button><a href="usuarioinfos.php?id=<?php echo $usuario['id'] ?>">Editar</a></button></td>
             </tr>
             <?php } ?>
         </table>

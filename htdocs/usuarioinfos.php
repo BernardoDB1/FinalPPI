@@ -12,7 +12,7 @@
     $id = $_GET['id'];
     $usuario = getUser($id);
     ?>
-    <form method="post" action="atualizarUsuario.php">
+    <form method="post" action="useratualiza.php">
         <fieldset class="container">
             <input name="id" type="hidden" value="<?php echo $usuario['id']; ?>" />
             <legend>Info</legend>
@@ -26,7 +26,7 @@
             <div>
                 <button><a href="home.php?p=">Voltar</a></button>
                 <input type="submit" value="Atualizar" />
-                <button><a href="deletarUsuario.php?id=<?php echo $id; ?>">Deletar</a></button>
+                <button><a href="userdeleta.php?id=<?php echo $id; ?>">Deletar</a></button>
             </div>
         </fieldset>
     </form>
